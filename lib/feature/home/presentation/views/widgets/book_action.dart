@@ -27,7 +27,7 @@ class BookAction extends StatelessWidget {
             child: CustomButton(
               onPressed: () {
                 launchCustomUrl(context,
-                    url: bookModels.volumeInfo.previewLink);
+                    url: bookModels.volumeInfo?.previewLink ?? "");
               },
               backgroundColor: const Color(0xffEF8262),
               text: getText(bookModels),
@@ -46,7 +46,7 @@ class BookAction extends StatelessWidget {
 }
 
 String getText(BookModels bookModels) {
-  if (bookModels.volumeInfo.previewLink != null) {
+  if (bookModels.volumeInfo?.previewLink != null) {
     return 'Preview';
   } else {
     return 'Not Avaliable';
