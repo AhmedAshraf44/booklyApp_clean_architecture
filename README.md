@@ -1,7 +1,6 @@
 # bookly_app_arch
 
-A new Flutter project.
-
+Build Booly App With Use Clean Architecture
 ## Getting Started
 
 This project is a starting point for a Flutter application.
